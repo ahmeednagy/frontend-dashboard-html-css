@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #001;
+  display: flex;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile .img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  flex-shrink: 0;
+}
+
+.profile .img-box img {
+  width: 100%;
+}
+
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.menu {
+  background-color: #123;
+  width: 60px;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.menu:hover {
+  width: 260px;
+}
+
+.menu ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover,
+.active,
+.content .data-info .box: {
+  background-color: #ffffff55;
+}
+
+.menu ul li a i {
+  font-size: 30px;
+}
+
+.menu ul .log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.menu ul .log-out a {
+  background-color: #a00;
+}
+
+/* End Menu */
+
+/* Start Content */
+
+.content {
+  width: 100%;
+  margin: 10px;
+}
+
+.content .title-info {
+  background-color: rgb(4, 129, 255);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.content .data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.content .data-info .box {
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
